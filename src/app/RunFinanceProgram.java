@@ -30,7 +30,12 @@ public class RunFinanceProgram {
                      			"VALUES (1, 0.0, 0.0, 0.0, 0.0 );"; 
 	         
 	         stmt.executeUpdate(sqlCreateTable);
-	         stmt.executeUpdate(sqlInsert);  //comment out after first run
+	         
+	         ResultSet rs = stmt.executeQuery("SELECT * FROM FINANCES");
+	         if (!rs.next()) {
+	        	 stmt.executeUpdate(sqlInsert);
+	         }
+	         
 	         //stmt.executeUpdate(sqlDropTable);
 	         stmt.close();
 	         
