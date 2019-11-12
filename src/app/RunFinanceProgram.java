@@ -20,7 +20,7 @@ public class RunFinanceProgram {
 	         
 	         stmt = c.createStatement();
 	         String sqlDropTable = "DROP TABLE FINANCES";
-	         String sqlCreateTable = "CREATE TABLE FINANCES " +
+	         String sqlCreateTable = "CREATE TABLE IF NOT EXISTS FINANCES " +
 	                        "(ID INT PRIMARY  KEY     NOT NULL," +
 	                        " INCOME          CHAR(50)    , " + 
 	                        " EXPENSES        CHAR(50)    , " + 
@@ -29,7 +29,7 @@ public class RunFinanceProgram {
 	         String sqlInsert = "INSERT INTO FINANCES (ID,CASH,INCOME,EXPENSES,INVESTMENTPERC) " +
                      			"VALUES (1, 0.0, 0.0, 0.0, 0.0 );"; 
 	         
-	         stmt.executeUpdate(sqlCreateTable); //comment out after first run
+	         stmt.executeUpdate(sqlCreateTable);
 	         stmt.executeUpdate(sqlInsert);  //comment out after first run
 	         //stmt.executeUpdate(sqlDropTable);
 	         stmt.close();
