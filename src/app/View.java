@@ -1,4 +1,4 @@
-package math;
+package app;
 
 import java.awt.BorderLayout;
 import javax.swing.GroupLayout;

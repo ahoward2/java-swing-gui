@@ -1,4 +1,4 @@
-package math;
+package app;
 import java.sql.*;
 
 public class RunFinanceProgram {
