@@ -10,6 +10,6 @@ Java Swing GUI finance application
 - Mac OS /path/to/directory/test.db
 - Windows C:/path/to/directory/test.db
 
-4. Run the program once.
+4. Run the program.
 
 
