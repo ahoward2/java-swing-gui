@@ -11,7 +11,5 @@ Java Swing GUI finance application
 - Windows C:/path/to/directory/test.db
 
 4. Run the program once.
-5. In RunFinanceProgram.java, comment out this line:
 
-- stmt.executeUpdate(sqlInsert);
 
